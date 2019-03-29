@@ -1,0 +1,13 @@
+adb --version
+
+emulator -version
+
+sdkmanager --licenses
+
+emulator -list-avds
+
+emulator -no-snapshot -avd <emulator>
+
+react-native init --version="0.56.0" nomeProjeto
+
+react-native run-android
