@@ -11,3 +11,9 @@ emulator -no-snapshot -avd <emulator>
 react-native init --version="0.56.0" nomeProjeto
 
 react-native run-android
+
+Redux => state container
+
+props => somente leitura
+
+state => manipular dados

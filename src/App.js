@@ -7,31 +7,35 @@
  * @lint-ignore-every XPLATJSCOPYRIGHT1
  */
 
-import React, {Component} from 'react';
-import {Platform, StyleSheet, Text, View} from 'react-native';
+import React, { Component } from 'react';
+import { Platform, StyleSheet, Text, View } from 'react-native';
 import Simples from './componentes/Simples';
+import BlinkApp from './componentes/BlinkApp';
+import Padrao from './estilo/Padrao';
+import FixedSize from './componentes/FixedSize';
+import FlexSize from './componentes/FlexSize';
+import FlexDirection from './componentes/FlexDirection';
+import Translator from './componentes/Translator';
+import ButtonAlert from './componentes/ButtonAlert';
 
 export default class App extends Component {
   render() {
     return (
-      <View style={styles.container}>
-        <Text style={styles.welcome}>Welcome to React Native, Igor!!</Text>
-        <Simples texto='texto props'></Simples>
-      </View>
+      // <View style={Padrao.container}>
+      //   <Text style={Padrao.welcome}>Welcome to React Native, Igor!!!</Text>
+      //   <Simples texto='texto props'></Simples>
+      //   <BlinkApp></BlinkApp>
+      // </View>
+
+      // <FixedSize></FixedSize>
+
+      // <FlexSize></FlexSize>
+
+      // <FlexDirection></FlexDirection>
+
+      // <Translator></Translator>
+
+      <ButtonAlert texto='This is an alert!'></ButtonAlert>
     );
   }
 }
-
-const styles = StyleSheet.create({
-  container: {
-    flex: 1,
-    justifyContent: 'center',
-    alignItems: 'center',
-    backgroundColor: '#F5FCFF',
-  },
-  welcome: {
-    fontSize: 20,
-    textAlign: 'center',
-    margin: 10,
-  },
-});
