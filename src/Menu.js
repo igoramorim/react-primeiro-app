@@ -11,11 +11,21 @@ import ButtonAlert from './componentes/ButtonAlert';
 import Contador from './componentes/Contador';
 import Plataformas from './componentes/Plataformas';
 import ValidarProps from './componentes/ValidarProps';
+import ListaFlex from './componentes/ListaFlex';
+import Flex from './componentes/Flex';
 
 export default createDrawerNavigator({
+    Flex: {
+        screen: () => <Flex></Flex>,
+        navigationOptions: { title: 'Flex' }
+    },
+    ListaFlex: {
+        screen: () => <ListaFlex></ListaFlex>,
+        navigationOptions: { title: 'Lista Flex' }
+    },
     ValidarProps: {
         screen: () => <ValidarProps ano='teste' label='igor: '></ValidarProps>,
-        navigationOptions: { title: 'ValidarProps' }
+        navigationOptions: { title: 'Validar Props' }
     },
     Plataformas: {
         screen: () => <Plataformas></Plataformas>,
