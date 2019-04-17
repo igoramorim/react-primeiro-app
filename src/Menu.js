@@ -13,8 +13,13 @@ import Plataformas from './componentes/Plataformas';
 import ValidarProps from './componentes/ValidarProps';
 import ListaFlex from './componentes/ListaFlex';
 import Flex from './componentes/Flex';
+import ShareExample from './componentes/ShareExample'
 
 export default createDrawerNavigator({
+    ShareExample: {
+        screen: () => <ShareExample></ShareExample>,
+        navigationOptions: { title: 'Share' }
+    },
     Flex: {
         screen: () => <Flex></Flex>,
         navigationOptions: { title: 'Flex' }
